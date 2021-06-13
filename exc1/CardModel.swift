@@ -2,7 +2,7 @@
 //  CardModel.swift
 //  exc1
 //
-//  Created by user196211 on 6/10/21.
+//  Created by user196211.
 //
 
 import Foundation

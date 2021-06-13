@@ -2,7 +2,7 @@
 //  CardCollectionViewCell.swift
 //  exc1
 //
-//  Created by user196211 on 6/10/21.
+//  Created by user196211 .
 //
 
 import UIKit
@@ -17,26 +17,9 @@ class CardCollectionViewCell: UICollectionViewCell {
     func configuredCell(card:Card){
         self.card=card
         frontImg.image = UIImage(named: card.imageName)
-        
-        //check if the card is mached or not
-        //      if card.isMatched
-        //     {
-                  //If the card has been matched then make the image view invisible
-                  
-           //       frontImg.alpha = 0
-             //     backImg.alpha = 0
-                  
-              //    return
-           //   }//
-           //   else{
-                  
-                  //If the card hasn't been mached then make the image view visible
-                  
-             //     frontImg.alpha = 1
-             //     backImg.alpha = 1
-         //  }
-              
-              //Check if card is in flipped state or not
+    
+  
+        //Check if card is in flipped state or not
         if card.isFlipped
               {
                   //filp the card
