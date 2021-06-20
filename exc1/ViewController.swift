@@ -18,12 +18,20 @@
         
         var firstFlippedCardIndex:IndexPath?
         
+        let columnLayout = ColumnFlowLayout(
+            cellsPerRow: 4,
+            minimumInteritemSpacing: 20,
+            minimumLineSpacing: 20,
+            sectionInset: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        )
+    
         override func viewDidLoad() {
                 super.viewDidLoad()
                 cardArr = model.getCards()
                     
                 collectionView.delegate = self
                 collectionView.dataSource = self
+            collectionView?.collectionViewLayout = columnLayout
 
         }
 
